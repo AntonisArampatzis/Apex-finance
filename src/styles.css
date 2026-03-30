@@ -1,29 +1,29 @@
 /* ============================================================
-   APEX — Mercedes F1 Palette
-   Black / Petronas Teal / Brushed Silver
+   APEX — Light Theme (Claude-style white)
+   White / Petronas Teal / Brushed Silver
    Font: Quantico + DM Mono
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:          #080A0C;
-  --surface:     #0E1215;
-  --surface2:    #141A1E;
-  --surface3:    #1C2428;
-  --border:      rgba(255,255,255,0.06);
-  --border2:     rgba(255,255,255,0.11);
-  --text:        #D8DFE3;
-  --muted:       #546570;
-  --muted2:      #7A9098;
-  --teal:        #00D2BE;
-  --teal2:       #00F5E4;
-  --teal-dim:    rgba(0,210,190,0.10);
-  --teal-border: rgba(0,210,190,0.22);
-  --silver:      #A8B8BF;
-  --silver2:     #C8D8DF;
-  --green:       #00D2BE;
-  --red:         #FF3B3B;
+  --bg:          #FFFFFF;
+  --surface:     #F7F7F8;
+  --surface2:    #EFEFEF;
+  --surface3:    #E5E5E5;
+  --border:      rgba(0,0,0,0.07);
+  --border2:     rgba(0,0,0,0.12);
+  --text:        #1A1A1A;
+  --muted:       #8E8EA0;
+  --muted2:      #5F6B7A;
+  --teal:        #00B5A4;
+  --teal2:       #00D2BE;
+  --teal-dim:    rgba(0,181,164,0.10);
+  --teal-border: rgba(0,181,164,0.28);
+  --silver:      #6B7280;
+  --silver2:     #374151;
+  --green:       #00B5A4;
+  --red:         #DC2626;
   --radius:      10px;
   --radius-sm:   7px;
 }
@@ -39,7 +39,7 @@ html, body, #root {
 /* ── Spinner ───────────────────────────────────────────────── */
 .spinner {
   width: 22px; height: 22px;
-  border: 2px solid rgba(255,255,255,0.08);
+  border: 2px solid rgba(0,0,0,0.10);
   border-top-color: var(--teal);
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
@@ -70,8 +70,8 @@ html, body, #root {
   padding: 24px;
   background: var(--bg);
   background-image:
-    linear-gradient(rgba(0,210,190,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,210,190,0.02) 1px, transparent 1px);
+    linear-gradient(rgba(0,181,164,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,181,164,0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -109,7 +109,7 @@ html, body, #root {
 
 .auth-title {
   font-family: 'Quantico', sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.22em;
   color: var(--text);
@@ -117,7 +117,7 @@ html, body, #root {
 }
 
 .auth-sub {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--teal);
   letter-spacing: 0.26em;
   text-transform: uppercase;
@@ -161,7 +161,7 @@ html, body, #root {
 
 .auth-label {
   font-family: 'Quantico', sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.16em;
   color: var(--muted2);
   text-transform: uppercase;
@@ -174,7 +174,7 @@ html, body, #root {
   border-radius: var(--radius-sm);
   color: var(--text);
   font-family: 'Quantico', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   padding: 12px 14px;
   outline: none;
   transition: border-color 0.15s;
@@ -184,10 +184,10 @@ html, body, #root {
 
 .auth-error {
   font-family: 'DM Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   color: var(--red);
-  background: rgba(255,59,59,0.08);
-  border: 1px solid rgba(255,59,59,0.2);
+  background: rgba(220,38,38,0.08);
+  border: 1px solid rgba(220,38,38,0.2);
   border-radius: 6px;
   padding: 10px 12px;
   letter-spacing: 0.02em;
@@ -197,9 +197,9 @@ html, body, #root {
   width: 100%;
   padding: 13px;
   background: var(--teal);
-  color: #000;
+  color: #fff;
   font-family: 'Quantico', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -219,7 +219,7 @@ html, body, #root {
 
 .auth-switch {
   margin-top: 22px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   font-family: 'Quantico', sans-serif;
   letter-spacing: 0.04em;
@@ -234,7 +234,7 @@ html, body, #root {
 
 /* OTP input row */
 .verify-hint {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted2);
   text-align: center;
   line-height: 1.7;
@@ -261,7 +261,7 @@ html, body, #root {
   border-radius: var(--radius-sm);
   color: var(--teal);
   font-family: 'DM Mono', monospace;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   text-align: center;
   outline: none;
@@ -284,7 +284,7 @@ html, body, #root {
   border: none;
   color: var(--teal);
   font-family: 'Quantico', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.04em;
@@ -298,7 +298,7 @@ html, body, #root {
   border: none;
   color: var(--muted);
   font-family: 'Quantico', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
   margin-top: 12px;
   letter-spacing: 0.06em;
@@ -327,7 +327,7 @@ html, body, #root {
   gap: 16px;
   color: var(--muted);
   font-family: 'Quantico', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -362,14 +362,14 @@ html, body, #root {
 
 .app-title {
   font-family: 'Quantico', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.24em;
   color: var(--text);
 }
 
 .app-sub {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--teal);
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -392,7 +392,7 @@ html, body, #root {
   align-items: center;
   gap: 6px;
   font-family: 'Quantico', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   color: var(--muted2);
   max-width: 180px;
   overflow: hidden;
@@ -427,7 +427,7 @@ html, body, #root {
 
 .month-display {
   font-family: 'Quantico', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--silver);
   min-width: 120px;
   text-align: center;
@@ -480,7 +480,7 @@ html, body, #root {
 
 .panel-label {
   font-family: 'Quantico', sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.18em;
   color: var(--muted2);
@@ -489,7 +489,7 @@ html, body, #root {
 
 .month-tag {
   font-family: 'Quantico', sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   color: var(--teal);
   background: var(--teal-dim);
   border: 1px solid var(--teal-border);
@@ -510,30 +510,30 @@ html, body, #root {
 }
 .pct-val {
   font-family: 'Quantico', sans-serif;
-  font-size: 22px; font-weight: 700;
+  font-size: 24px; font-weight: 700;
   color: var(--teal); line-height: 1;
 }
 .pct-sub {
-  font-size: 9px; color: var(--muted);
+  font-size: 11px; color: var(--muted);
   font-family: 'Quantico', sans-serif;
   letter-spacing: 0.12em; text-transform: uppercase; margin-top: 3px;
 }
 
 .budget-stats { flex: 1; display: flex; flex-direction: column; }
 .stat-divider { height: 1px; background: var(--border); margin: 8px 0; }
-.stat-row { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
-.stat-name { flex: 1; font-size: 11px; color: var(--muted2); font-family: 'Quantico', sans-serif; letter-spacing: 0.06em; }
-.stat-value { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--silver2); }
+.stat-row { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+.stat-name { flex: 1; font-size: 13px; color: var(--muted2); font-family: 'Quantico', sans-serif; letter-spacing: 0.06em; }
+.stat-value { font-family: 'DM Mono', monospace; font-size: 14px; color: var(--silver2); }
 .stat-value.green { color: var(--teal); }
 .stat-value.red   { color: var(--red); }
 .stat-value-row { display: flex; align-items: center; gap: 6px; }
 .inline-edit { display: flex; align-items: center; gap: 4px; }
-.currency-prefix { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); }
+.currency-prefix { font-family: 'DM Mono', monospace; font-size: 14px; color: var(--muted); }
 .budget-input {
   width: 90px; background: var(--surface2);
   border: 1px solid var(--border2); border-radius: 6px;
   color: var(--text); font-family: 'DM Mono', monospace;
-  font-size: 13px; padding: 4px 8px; outline: none;
+  font-size: 15px; padding: 4px 8px; outline: none;
 }
 .budget-input:focus { border-color: var(--teal); }
 
@@ -548,7 +548,7 @@ html, body, #root {
 .icon-btn.red   { color: var(--red); }
 .icon-btn.muted:hover { color: var(--teal); }
 
-.budget-bar-track { margin-top: 18px; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden; }
+.budget-bar-track { margin-top: 18px; height: 3px; background: rgba(0,0,0,0.08); border-radius: 2px; overflow: hidden; }
 .budget-bar-fill  { height: 100%; border-radius: 2px; transition: width 0.5s ease, background 0.3s; }
 
 /* ── Pie Panel ─────────────────────────────────────────────── */
@@ -558,31 +558,31 @@ html, body, #root {
   transform: translate(-50%, -50%);
   text-align: center; pointer-events: none;
 }
-.pie-center-val { display: block; font-family: 'Quantico', sans-serif; font-size: 26px; font-weight: 700; color: var(--teal); line-height: 1; }
-.pie-center-sub { display: block; font-size: 9px; color: var(--muted); font-family: 'Quantico', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
+.pie-center-val { display: block; font-family: 'Quantico', sans-serif; font-size: 28px; font-weight: 700; color: var(--teal); line-height: 1; }
+.pie-center-sub { display: block; font-size: 11px; color: var(--muted); font-family: 'Quantico', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
 
 .pie-empty { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 48px 0; }
-.pie-empty-ring { width: 100px; height: 100px; border-radius: 50%; border: 10px solid rgba(0,210,190,0.07); }
-.pie-empty p { font-size: 11px; color: var(--muted); font-family: 'Quantico', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+.pie-empty-ring { width: 100px; height: 100px; border-radius: 50%; border: 10px solid rgba(0,181,164,0.10); }
+.pie-empty p { font-size: 13px; color: var(--muted); font-family: 'Quantico', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
 
 .pie-legend { display: flex; flex-direction: column; gap: 4px; margin-top: 4px; max-height: 140px; overflow-y: auto; }
 .legend-item { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 6px; cursor: default; transition: background 0.15s; }
 .legend-item:hover, .legend-item.active { background: var(--surface2); }
 .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-.legend-name { flex: 1; font-size: 11px; color: var(--muted2); font-family: 'Quantico', sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: 0.04em; }
-.legend-pct { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); width: 32px; text-align: right; }
-.legend-amt { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--silver2); width: 70px; text-align: right; }
+.legend-name { flex: 1; font-size: 13px; color: var(--muted2); font-family: 'Quantico', sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: 0.04em; }
+.legend-pct { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); width: 32px; text-align: right; }
+.legend-amt { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--silver2); width: 70px; text-align: right; }
 
-.pie-tooltip { background: var(--surface2); border: 1px solid var(--border2); border-radius: 8px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.pie-tooltip { background: var(--surface2); border: 1px solid var(--border2); border-radius: 8px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .tt-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .tt-name { color: var(--muted2); font-family: 'Quantico', sans-serif; }
-.tt-val { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--silver2); margin-left: 8px; }
+.tt-val { font-family: 'DM Mono', monospace; font-size: 15px; color: var(--silver2); margin-left: 8px; }
 
 /* ── Add Panel ─────────────────────────────────────────────── */
 .tab-row { display: flex; gap: 4px; background: var(--surface2); border-radius: var(--radius-sm); padding: 4px; margin-bottom: 20px; }
 .tab-btn {
   flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
-  padding: 8px 12px; font-family: 'Quantico', sans-serif; font-size: 11px; font-weight: 700;
+  padding: 8px 12px; font-family: 'Quantico', sans-serif; font-size: 13px; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase; border: none; border-radius: 6px;
   cursor: pointer; background: none; color: var(--muted); transition: background 0.15s, color 0.15s;
 }
@@ -591,11 +591,11 @@ html, body, #root {
 
 .form-grid { display: flex; flex-direction: column; gap: 14px; }
 .form-field { display: flex; flex-direction: column; gap: 6px; }
-.field-label { font-family: 'Quantico', sans-serif; font-size: 9px; letter-spacing: 0.14em; color: var(--muted2); text-transform: uppercase; }
+.field-label { font-family: 'Quantico', sans-serif; font-size: 11px; letter-spacing: 0.14em; color: var(--muted2); text-transform: uppercase; }
 .field-input {
   background: var(--surface2); border: 1px solid var(--border);
   border-radius: var(--radius-sm); color: var(--text);
-  font-family: 'Quantico', sans-serif; font-size: 13px;
+  font-family: 'Quantico', sans-serif; font-size: 15px;
   padding: 10px 12px; outline: none; transition: border-color 0.15s; width: 100%;
 }
 .field-input:focus { border-color: var(--teal); }
@@ -603,15 +603,15 @@ html, body, #root {
 .field-select { appearance: none; cursor: pointer; }
 
 .no-cats-hint {
-  font-family: 'Quantico', sans-serif; font-size: 11px; color: var(--teal);
+  font-family: 'Quantico', sans-serif; font-size: 13px; color: var(--teal);
   padding: 10px 12px; background: var(--teal-dim);
   border: 1px dashed var(--teal-border); border-radius: var(--radius-sm); letter-spacing: 0.04em;
 }
 
 .submit-btn {
   display: flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 12px; background: var(--teal); color: #000;
-  font-family: 'Quantico', sans-serif; font-size: 12px; font-weight: 700;
+  padding: 12px; background: var(--teal); color: #fff;
+  font-family: 'Quantico', sans-serif; font-size: 14px; font-weight: 700;
   letter-spacing: 0.14em; text-transform: uppercase;
   border: none; border-radius: var(--radius-sm); cursor: pointer;
   transition: background 0.15s, transform 0.1s; margin-top: 4px;
@@ -623,30 +623,30 @@ html, body, #root {
 .color-picker-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .color-swatch { width: 26px; height: 26px; border-radius: 6px; border: 2px solid transparent; cursor: pointer; transition: transform 0.15s, border-color 0.15s; flex-shrink: 0; }
 .color-swatch:hover { transform: scale(1.15); }
-.color-swatch.selected { border-color: #fff; transform: scale(1.15); }
+.color-swatch.selected { border-color: #1A1A1A; transform: scale(1.15); }
 .custom-color-wrap { position: relative; width: 26px; height: 26px; border-radius: 6px; overflow: hidden; cursor: pointer; border: 1px solid var(--border2); flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--surface3); }
 .custom-color-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
 .custom-color-icon { color: var(--muted2); pointer-events: none; }
 .color-preview-row { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--surface2); border-radius: var(--radius-sm); }
 .preview-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
-.preview-name { font-size: 12px; color: var(--muted2); font-family: 'Quantico', sans-serif; letter-spacing: 0.06em; }
+.preview-name { font-size: 14px; color: var(--muted2); font-family: 'Quantico', sans-serif; letter-spacing: 0.06em; }
 
 /* ── Expense List ───────────────────────────────────────────── */
-.list-empty { font-family: 'Quantico', sans-serif; font-size: 11px; color: var(--muted); text-align: center; padding: 32px 0; letter-spacing: 0.1em; text-transform: uppercase; }
+.list-empty { font-family: 'Quantico', sans-serif; font-size: 13px; color: var(--muted); text-align: center; padding: 32px 0; letter-spacing: 0.1em; text-transform: uppercase; }
 .expense-groups { display: flex; flex-direction: column; gap: 16px; max-height: 340px; overflow-y: auto; padding-right: 4px; }
 .cat-group-header { display: flex; align-items: center; gap: 8px; padding: 6px 0; margin-bottom: 4px; }
 .cat-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-.cat-group-name { flex: 1; font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted2); font-family: 'Quantico', sans-serif; }
-.cat-group-total { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--silver2); }
+.cat-group-name { flex: 1; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted2); font-family: 'Quantico', sans-serif; }
+.cat-group-total { font-family: 'DM Mono', monospace; font-size: 14px; color: var(--silver2); }
 .cat-items { display: flex; flex-direction: column; gap: 2px; padding-left: 18px; border-left: 1px solid var(--border); }
 .expense-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; border-radius: 6px; transition: background 0.12s, opacity 0.2s; }
 .expense-row:hover { background: var(--surface2); }
 .expense-row.deleting { opacity: 0.4; }
 .exp-left { display: flex; flex-direction: column; gap: 2px; }
-.exp-name { font-size: 12px; color: var(--text); font-family: 'Quantico', sans-serif; letter-spacing: 0.04em; }
-.exp-date { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); }
+.exp-name { font-size: 14px; color: var(--text); font-family: 'Quantico', sans-serif; letter-spacing: 0.04em; }
+.exp-date { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); }
 .exp-right { display: flex; align-items: center; gap: 10px; }
-.exp-amount { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--silver2); }
+.exp-amount { font-family: 'DM Mono', monospace; font-size: 15px; color: var(--silver2); }
 .delete-btn { background: none; border: none; color: var(--muted); cursor: pointer; padding: 4px; border-radius: 4px; display: flex; align-items: center; opacity: 0; transition: opacity 0.15s, color 0.15s; }
 .expense-row:hover .delete-btn { opacity: 1; }
 .delete-btn:hover { color: var(--red); }
@@ -679,7 +679,7 @@ input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
   .budget-main { gap: 16px; }
   .circular-wrap { width: 100px; height: 100px; }
   .circular-wrap svg { width: 100px; height: 100px; }
-  .pct-val { font-size: 18px; }
+  .pct-val { font-size: 20px; }
 
   .pie-legend { max-height: 120px; }
 }
@@ -688,8 +688,8 @@ input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
 @media (max-width: 600px) {
   .app { padding: 12px 12px 60px; gap: 12px; }
 
-  .app-title { font-size: 18px; }
-  .app-sub { font-size: 8px; }
+  .app-title { font-size: 20px; }
+  .app-sub { font-size: 10px; }
 
   .brand-icon { width: 36px; height: 36px; }
   .brand-icon svg { width: 20px; height: 20px; }
@@ -697,7 +697,7 @@ input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
   .header-right { flex-direction: column; gap: 8px; align-items: stretch; }
   .month-selector { justify-content: space-between; }
   .user-menu { justify-content: space-between; }
-  .user-email { font-size: 10px; }
+  .user-email { font-size: 12px; }
 
   .top-row, .bottom-row { gap: 12px; }
 
@@ -710,40 +710,40 @@ input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
   .circular-wrap svg { width: 110px; height: 110px; }
 
   .panel-header { margin-bottom: 12px; }
-  .panel-label { font-size: 8px; }
-  .ptag, .month-tag { font-size: 8px; padding: 2px 6px; }
+  .panel-label { font-size: 10px; }
+  .ptag, .month-tag { font-size: 10px; padding: 2px 6px; }
 
   /* Pie chart smaller on mobile */
   .pie-wrap .recharts-wrapper { height: 180px !important; }
-  .pie-center-val { font-size: 22px; }
-  .pie-center-sub { font-size: 8px; }
+  .pie-center-val { font-size: 24px; }
+  .pie-center-sub { font-size: 10px; }
   .pie-legend { max-height: 100px; }
-  .legend-name { font-size: 10px; }
-  .legend-amt { font-size: 10px; width: 56px; }
+  .legend-name { font-size: 12px; }
+  .legend-amt { font-size: 12px; width: 56px; }
 
   /* Forms */
-  .tab-btn { font-size: 10px; padding: 7px 8px; }
-  .field-input { font-size: 14px; padding: 11px 12px; } /* bigger tap targets */
-  .submit-btn { padding: 13px; font-size: 13px; }
+  .tab-btn { font-size: 12px; padding: 7px 8px; }
+  .field-input { font-size: 15px; padding: 11px 12px; } /* bigger tap targets */
+  .submit-btn { padding: 13px; font-size: 15px; }
   .color-swatch { width: 28px; height: 28px; } /* bigger tap targets */
   .custom-color-wrap { width: 28px; height: 28px; }
 
   /* Expense list */
   .expense-groups { max-height: 260px; }
-  .exp-name { font-size: 13px; }
-  .exp-amount { font-size: 12px; }
+  .exp-name { font-size: 15px; }
+  .exp-amount { font-size: 14px; }
   .delete-btn { opacity: 1; } /* always visible on mobile — no hover */
 
   /* Auth pages */
   .auth-card { padding: 28px 20px; }
-  .auth-title { font-size: 22px; }
-  .otp-input { width: 40px; height: 48px; font-size: 20px; }
+  .auth-title { font-size: 24px; }
+  .otp-input { width: 40px; height: 48px; font-size: 22px; }
   .otp-row { gap: 6px; }
 }
 
 /* Very small phones */
 @media (max-width: 380px) {
-  .otp-input { width: 36px; height: 44px; font-size: 18px; }
+  .otp-input { width: 36px; height: 44px; font-size: 20px; }
   .otp-row { gap: 4px; }
   .color-swatch { width: 24px; height: 24px; }
 }
